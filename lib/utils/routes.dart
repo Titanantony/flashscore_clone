@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 class Routes {
   static var routes = [
     GetPage(name: "/login", page: () => Login()),
-    GetPage(name: "/home", page: () => const MyHomePage()),
+    GetPage(name: "/home", page: () => const ToggleDate()),
     GetPage(name: "/", page: () => MyAppWithBottomNavBar()),
   ];
 }

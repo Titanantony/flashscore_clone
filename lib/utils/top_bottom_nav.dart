@@ -21,7 +21,7 @@ class MyAppWithBottomNavBar extends StatelessWidget {
               ),
               SizedBox(width: 10),
               Text(
-                'My App',
+                'Football',
                 style: TextStyle(color: Colors.white),
               ),
               SizedBox(width: 10),
@@ -83,7 +83,7 @@ class _MainScreenWithTopNavBarState extends State<MainScreenWithTopNavBar> {
 
   List<Widget> _buildScreens() {
     return [
-      const MyHomePage(),
+      const ToggleDate(),
       Container(color: Colors.red),
       Container(color: Colors.blue), // Replace with your screen widget
       Container(color: Colors.orange[800]),
@@ -147,73 +147,3 @@ class _MainScreenWithTopNavBarState extends State<MainScreenWithTopNavBar> {
     );
   }
 }
-
-
-
-
-
-// import 'package:flashscore_clone/constants/constant.dart';
-// import 'package:flashscore_clone/screens/home_page.dart';
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-
-// class MyAppp extends StatelessWidget {
-//   const MyAppp({Key? key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: MainScreen(),
-//     );
-//   }
-// }
-
-// class MainScreen extends StatefulWidget {
-//   const MainScreen({Key? key}) : super(key: key);
-
-//   @override
-//   _MainScreenState createState() => _MainScreenState();
-// }
-
-// class _MainScreenState extends State<MainScreen> {
-//   late PersistentTabController _controller;
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     _controller = PersistentTabController(initialIndex: 0);
-//   }
-
-//   List<Widget> _buildScreens() {
-//     return [
-      
-//       Container(color: Colors.red), // Replace with your screen widget
-       // Replace with your screen widget
-//     ];
-//   }
-
- 
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return PersistentTabView(
-//       context,
-//       controller: _controller,
-//       screens: _buildScreens(),
-//       items: _navBarsItems(),
-//       confineInSafeArea: true,
-//       backgroundColor: Colors.white, // Overall background color
-//       handleAndroidBackButtonPress: true,
-//       resizeToAvoidBottomInset: true,
-//       navBarStyle: NavBarStyle.style6,
-//       navBarHeight: 60.0,
-//       onItemSelected: (index) {
-//         setState(() {
-//           _controller.index = index;
-//         });
-//       },
-//     );
-//   }
-// }
