@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flashscore_clone/constants/constant.dart';
 import 'package:flashscore_clone/screens/home_page.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class MyAppWithBottomNavBar extends StatelessWidget {
@@ -39,22 +41,18 @@ class MyAppWithBottomNavBar extends StatelessWidget {
                 size: 30,
                 color: nextcolor,
               ),
-              onPressed: () {
-                // Handle search action
-              },
+              onPressed: () {},
             ),
             const SizedBox(
               width: 8,
             ),
-            IconButton(
-              icon: const Icon(
+            const IconButton(
+              icon: Icon(
                 CupertinoIcons.person_crop_circle,
                 size: 30,
                 color: nextcolor,
               ),
-              onPressed: () {
-                // Handle more action
-              },
+              onPressed: settingslogin,
             ),
           ],
         ),
@@ -146,4 +144,8 @@ class _MainScreenWithTopNavBarState extends State<MainScreenWithTopNavBar> {
       },
     );
   }
+}
+
+void settingslogin() {
+  Get.offAndToNamed("/settings_login");
 }

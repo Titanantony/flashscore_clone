@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       getPages: Routes.routes,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
     );
   }
 }
