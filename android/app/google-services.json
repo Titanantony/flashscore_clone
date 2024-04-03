@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "660753423419",
+    "project_id": "flashscoreclone",
+    "storage_bucket": "flashscoreclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660753423419:android:838394e2fc3cde5e07d01e",
+        "android_client_info": {
+          "package_name": "com.example.flashscore_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3rjoL8Txx8I0LgWRVCeIH3wJi5qBziaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
