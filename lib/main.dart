@@ -4,9 +4,6 @@ import 'package:flashscore_clone/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

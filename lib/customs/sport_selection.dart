@@ -1,4 +1,3 @@
-import 'package:flashscore_clone/customs/sports_icons.dart';
 import 'package:flutter/material.dart';
 
 class SportsSelection extends StatelessWidget {
@@ -13,30 +12,34 @@ class SportsSelection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return showSportSelection
-        ? _buildSportSelectionList()
-        : const SizedBox.shrink();
-  }
-
-  Widget _buildSportSelectionList() {
-    return Container(
-      color: Colors.white,
-      child: ListView.builder(
-        itemCount: sports.length,
-        itemBuilder: (context, index) {
-          final sport = sports[index];
-          return ListTile(
-            leading: _getSportIcon(sport['NAME']),
-            title: Text(sport['NAME']),
-          );
-        },
-      ),
+    return Stack(
+      children: [
+        // Existing content goes here
+        const Placeholder(),
+        if (showSportSelection)
+          Positioned.fill(
+            child: Container(
+              color: Colors.white,
+              child: ListView.builder(
+                itemCount: sports.length,
+                itemBuilder: (context, index) {
+                  final sport = sports[index];
+                  return ListTile(
+                    leading: _getSportIcon(sport['NAME']),
+                    title: Text(sport['NAME']),
+                  );
+                },
+              ),
+            ),
+          ),
+      ],
     );
   }
 
   Widget _getSportIcon(String sportName) {
+    // Your implementation to get the sport icon
     return Icon(
-      sportIcons[sportName] ?? Icons.sports,
+      Icons.sports,
     );
   }
 }

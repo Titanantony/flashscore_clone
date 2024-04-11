@@ -1,5 +1,6 @@
 import 'package:flashscore_clone/constants/constant.dart';
 import 'package:flashscore_clone/screens/home_page.dart';
+import 'package:flashscore_clone/screens/live_page/live_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -26,7 +27,7 @@ class _MainScreenWithTopNavBarState extends State<MainScreenWithTopNavBar> {
   List<Widget> _buildScreens() {
     return [
       ToggleDate(),
-      Container(color: Colors.red),
+      LiveScoresScreen(),
       Container(color: Colors.blue), // Replace with your screen widget
       Container(color: Colors.orange[800]),
       Container(color: Colors.yellow[800]),
